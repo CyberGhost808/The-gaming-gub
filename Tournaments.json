@@ -1,0 +1,81 @@
+[
+    {
+        "id": 0,
+        "name": "FIFA Championship Series",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "12 June 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    },
+    {
+        "id": 1,
+        "name": "Winter Champions league",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "16 June 2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    
+    },
+    {
+        "id": 2,
+        "name": "Championship Showdown",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "20 June 2024",
+        "description": "12 June Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    },
+    {
+        "id": 3,
+        "name": "Championship Series",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "24 June 2024",
+        "description": " 24 June Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    },
+    {
+        "id": 4,
+        "name": "LaLiga Champions league",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "28 June 2024",
+        "description": " 28 June Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    },
+    {
+        "id": 5,
+        "name": "UEFA Champion League",
+        "version": "",
+        "Platform": "Playstation 4",
+        "NoOfPlayers": 64,
+        "Price": "",
+        "Schedule": "",
+        "Rules": "",
+        "Eligibility": "",
+        "date": "02 July 2024",
+        "description": "02 July Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni alias dolores vitae quibusdam dolore, corporis accusantium expedita veritatis, porro numquam, quia fuga iure nihil voluptate maiores blanditiis id aliquid."
+    }
+]
