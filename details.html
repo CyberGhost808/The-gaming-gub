@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Hub | Welcome to the ganing hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detailsBody">
+    
+    <header class="HomeHeader">
+
+        <div class="Logo">
+            <a href="Home.html">Anonymous Softwares</a>
+        </div>
+
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About us</a>
+            <a href="Contact.html">Contact us</a>
+        </nav>
+
+    </header>
+
+    <main class="detailMain">
+
+        <div class="wrapper">
+
+            <div class="TournamentName"></div>
+
+            <div class="Date"></div>
+
+            <div class="GameVersion"></div>
+
+            <div class="Platform"></div>
+
+            <div class="NoOfPlayers"></div>
+
+            <div class="Price"></div>
+
+            <div class="Schedule"></div>
+
+            <div class="Eligible"></div>
+
+            <div class="Rules"></div>
+
+            <div class="Description"></div>
+    
+            <input type="submit" value="Join Tournament" class="Join">
+
+        </div>
+
+    </main>
+
+    <footer class="HomeFooter">
+
+        <div class="links">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=61558885121865" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/anonymoussoftware?igsh=YzljYTk1ODg3Zg==" target="_blank">Instagram</a>
+        </div>
+
+        <p>
+            &copy; The Gaming Hub 2024
+        </p>
+
+    </footer>
+
+    <script>
+
+    let Tournament = null;
+
+    fetch("Tournaments.json")
+    .then(response => response.json())
+    .then(data => {
+        Tournament = data
+        console.log(Tournament);
+        TourDescription();
+    })
+
+    function TourDescription(){
+        let Date = document.querySelector(".Date")
+        let TourName = document.querySelector(".TournamentName");
+        let version = document.querySelector(".GameVersion")
+        let platform = document.querySelector(".Platform")
+        let player = document.querySelector(".NoOfPlayers")
+        let price = document.querySelector(".Price")
+        let schedule = document.querySelector(".Schedule")
+        let Eligibility = document.querySelector(".Eligible")
+        let rules = document.querySelector(".Rules")        
+        let Description = document.querySelector(".Description");
+
+        let TourId = new URLSearchParams(window.location.search).get('id');
+        let thisTour = Tournament.filter(value => {
+            return value.id == TourId
+        })[0];
+
+        if(!thisTour){
+            window.location.href = "/"
+        }
+
+        TourName.innerHTML = `<h1>${thisTour.name}</h1>`;
+        Date.innerHTML = `<h2>Date: ${thisTour.date}</h2>`;
+        version.innerHTML = `<h2>Game version: ${thisTour.version}</h2>`;
+        platform.innerHTML = `<h2>Platform: ${thisTour.Platform} </h2>`;
+        player.innerHTML = `<h2>Number of Players: ${thisTour.NoOfPlayers}</h2>`;
+        price.innerHTML = `<h2>Prices: <br> ${thisTour.Price}</h2>`;
+        schedule.innerHTML = `<h2>Scheduled: ${thisTour.Schedule}</h2>`;
+        Eligibility.innerHTML = `<h2>Eligibility: ${thisTour.Eligibility}<h2>`;
+        rules.innerHTML =  `<h2>Rules: ${thisTour.Rules}</h2>`;
+        Description.innerHTML = `<p>${thisTour.description}</p>`;
+    }
+
+    </script>
+    
+</body>
+</html>
