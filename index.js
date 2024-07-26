@@ -1,4 +1,4 @@
-const targetdate = new Date("22 July 2024");
+const targetdate = new Date("25 December 2024");
 
 
 const UpdateCountDown= () => {
